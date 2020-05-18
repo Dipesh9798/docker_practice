@@ -1,2 +1,3 @@
 # docker_practice
-For my on practice of Docker
+For my own practice of Docker
+Changed docker_practice to dockersummer2020

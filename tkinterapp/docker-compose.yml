@@ -4,4 +4,5 @@ services:
        image: dipesh:v1
        build: .
        container_name: tkinterapp
-
+       ports:
+         - "8000:8000"
