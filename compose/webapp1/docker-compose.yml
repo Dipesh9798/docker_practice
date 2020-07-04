@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+   app1:
+      image: dipesh:webapp1
+      build: .
+      container_name: webc11
+      ports:
+       - "9991:80"
+
+
