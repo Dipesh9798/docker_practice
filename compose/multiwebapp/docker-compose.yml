@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+   app1:
+      image: dipesh:multiapp1
+      build: .
+      container_name: webc22
+      ports:
+       - "9999:80"
+
+

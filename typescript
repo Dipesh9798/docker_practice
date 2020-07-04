@@ -1,0 +1,775 @@
+Script started on 2020-07-04 07:58:42+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="106" LINES="28"]
+]0;dipesh@myubuntu: ~/dockersummer2020[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020[00m$ ls
+docker.txt  [0m[01;34mmultipleApplication[0m  README.md  [01;34mrunCode[0m  [01;34mtkinterapp[0m  typescript
+]0;dipesh@myubuntu: ~/dockersummer2020[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020[00m$ mkdir compose
+]0;dipesh@myubuntu: ~/dockersummer2020[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020[00m$ cd co[Kompose/
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ mkdir webapp1
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ cd webapp1/
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ cd ..
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ rmdir webapp1/
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ git clone https://github.com/github/personal-website.git
+Cloning into 'personal-website'...
+remote: Enumerating objects: 1415, done.[K
+Receiving objects:   0% (1/1415)Receiving objects:   1% (15/1415)Receiving objects:   2% (29/1415)Receiving objects:   3% (43/1415)Receiving objects:   4% (57/1415)Receiving objects:   5% (71/1415)Receiving objects:   6% (85/1415)Receiving objects:   7% (100/1415)Receiving objects:   8% (114/1415)Receiving objects:   9% (128/1415)Receiving objects:  10% (142/1415)Receiving objects:  11% (156/1415)Receiving objects:  12% (170/1415)Receiving objects:  13% (184/1415)Receiving objects:  14% (199/1415)Receiving objects:  15% (213/1415)Receiving objects:  16% (227/1415)Receiving objects:  17% (241/1415)Receiving objects:  18% (255/1415)Receiving objects:  19% (269/1415)Receiving objects:  20% (283/1415)Receiving objects:  21% (298/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  22% (312/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  23% (326/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  24% (340/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  25% (354/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  26% (368/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  27% (383/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  28% (397/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  29% (411/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  30% (425/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  31% (439/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  32% (453/1415), 148.01 KiB | 277.00 KiB/sReceiving objects:  32% (453/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  33% (467/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  34% (482/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  35% (496/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  36% (510/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  37% (524/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  38% (538/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  39% (552/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  40% (566/1415), 284.01 KiB | 274.00 KiB/sReceiving objects:  40% (570/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  41% (581/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  42% (595/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  43% (609/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  44% (623/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  45% (637/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  46% (651/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  47% (666/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  48% (680/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  49% (694/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  50% (708/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  51% (722/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  52% (736/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  53% (750/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  54% (765/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  55% (779/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  56% (793/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  57% (807/1415), 660.01 KiB | 322.00 KiB/sReceiving objects:  58% (821/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  59% (835/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  60% (849/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  61% (864/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  62% (878/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  63% (892/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  64% (906/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  65% (920/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  66% (934/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  67% (949/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  68% (963/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  69% (977/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  70% (991/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  71% (1005/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  72% (1019/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  73% (1033/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  74% (1048/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  75% (1062/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  76% (1076/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  77% (1090/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  78% (1104/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  79% (1118/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  80% (1132/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  81% (1147/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  82% (1161/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  83% (1175/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  84% (1189/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  85% (1203/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  86% (1217/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  87% (1232/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  88% (1246/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  89% (1260/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  90% (1274/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  91% (1288/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  92% (1302/1415), 796.01 KiB | 311.00 KiB/sremote: Total 1415 (delta 0), reused 0 (delta 0), pack-reused 1415[K
+Receiving objects:  93% (1316/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  94% (1331/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  95% (1345/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  96% (1359/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  97% (1373/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  98% (1387/1415), 796.01 KiB | 311.00 KiB/sReceiving objects:  99% (1401/1415), 796.01 KiB | 311.00 KiB/sReceiving objects: 100% (1415/1415), 796.01 KiB | 311.00 KiB/sReceiving objects: 100% (1415/1415), 898.86 KiB | 322.00 KiB/s, done.
+Resolving deltas:   0% (0/726)Resolving deltas:   1% (13/726)Resolving deltas:   2% (21/726)Resolving deltas:   4% (34/726)Resolving deltas:   5% (38/726)Resolving deltas:   6% (47/726)Resolving deltas:   7% (51/726)Resolving deltas:   9% (71/726)Resolving deltas:  14% (106/726)Resolving deltas:  20% (151/726)Resolving deltas:  25% (182/726)Resolving deltas:  27% (199/726)Resolving deltas:  30% (222/726)Resolving deltas:  33% (240/726)Resolving deltas:  36% (268/726)Resolving deltas:  37% (275/726)Resolving deltas:  38% (277/726)Resolving deltas:  39% (287/726)Resolving deltas:  40% (295/726)Resolving deltas:  41% (298/726)Resolving deltas:  42% (306/726)Resolving deltas:  50% (364/726)Resolving deltas:  51% (376/726)Resolving deltas:  52% (383/726)Resolving deltas:  53% (385/726)Resolving deltas:  54% (395/726)Resolving deltas:  57% (415/726)Resolving deltas:  59% (434/726)Resolving deltas:  60% (436/726)Resolving deltas:  61% (444/726)Resolving deltas:  62% (456/726)Resolving deltas:  63% (459/726)Resolving deltas:  64% (465/726)Resolving deltas:  65% (472/726)Resolving deltas:  66% (482/726)Resolving deltas:  68% (494/726)Resolving deltas:  69% (503/726)Resolving deltas:  70% (509/726)Resolving deltas:  71% (519/726)Resolving deltas:  72% (523/726)Resolving deltas:  73% (530/726)Resolving deltas:  74% (543/726)Resolving deltas:  75% (547/726)Resolving deltas:  78% (570/726)Resolving deltas:  82% (599/726)Resolving deltas:  83% (606/726)Resolving deltas:  84% (613/726)Resolving deltas:  85% (623/726)Resolving deltas:  86% (625/726)Resolving deltas:  87% (633/726)Resolving deltas:  88% (641/726)Resolving deltas:  91% (663/726)Resolving deltas:  94% (686/726)Resolving deltas:  95% (693/726)Resolving deltas:  96% (697/726)Resolving deltas:  98% (714/726)Resolving deltas: 100% (726/726)Resolving deltas: 100% (726/726), done.
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ ls
+[0m[01;34mpersonal-website[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ mv personal-website/ [K[K webapp1
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ ls
+[0m[01;34mwebapp1[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ cd webapp1/
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ ls'[K
+[0m[01;34massets[0m       [01;34m_data[0m        Gemfile    index.html  LICENSE.txt  README.md
+_config.yml  favicon.ico  [01;34m_includes[0m  [01;34m_layouts[0m    [01;34m_posts[0m       [01;34m_sass[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ cd ..
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ rmdir webapp1/
+rmdir: failed to remove 'webapp1/': Directory not empty
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ ls
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ cd webapp1
+bash: cd: webapp1: No such file or directory
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ mkdir webq[Kapp1
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ cd webapp1/
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ git clone https://github.com/github/personal-website.git
+Cloning into 'personal-website'...
+remote: Enumerating objects: 1415, done.[K
+Receiving objects:   0% (1/1415)Receiving objects:   1% (15/1415)Receiving objects:   2% (29/1415)Receiving objects:   3% (43/1415)Receiving objects:   4% (57/1415)Receiving objects:   5% (71/1415)Receiving objects:   6% (85/1415)Receiving objects:   7% (100/1415)Receiving objects:   8% (114/1415)Receiving objects:   9% (128/1415)Receiving objects:  10% (142/1415)Receiving objects:  11% (156/1415)Receiving objects:  12% (170/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  13% (184/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  14% (199/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  15% (213/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  16% (227/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  17% (241/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  18% (255/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  19% (269/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  20% (283/1415), 68.01 KiB | 122.00 KiB/sReceiving objects:  20% (291/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  21% (298/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  22% (312/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  23% (326/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  24% (340/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  25% (354/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  26% (368/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  27% (383/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  28% (397/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  29% (411/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  30% (425/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  31% (439/1415), 156.01 KiB | 141.00 KiB/sReceiving objects:  32% (453/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  33% (467/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  34% (482/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  35% (496/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  36% (510/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  37% (524/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  38% (538/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  39% (552/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  40% (566/1415), 260.01 KiB | 141.00 KiB/sReceiving objects:  40% (569/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  41% (581/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  42% (595/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  43% (609/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  44% (623/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  45% (637/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  46% (651/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  47% (666/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  48% (680/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  49% (694/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  50% (708/1415), 524.01 KiB | 225.00 KiB/sReceiving objects:  51% (722/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  52% (736/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  53% (750/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  54% (765/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  55% (779/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  56% (793/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  57% (807/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  58% (821/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  59% (835/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  60% (849/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  61% (864/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  62% (878/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  63% (892/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  64% (906/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  65% (920/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  66% (934/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  66% (935/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  67% (949/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  68% (963/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  69% (977/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  70% (991/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  71% (1005/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  72% (1019/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  73% (1033/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  74% (1048/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  75% (1062/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  76% (1076/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  77% (1090/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  78% (1104/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  79% (1118/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  80% (1132/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  81% (1147/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  82% (1161/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  83% (1175/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  84% (1189/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  85% (1203/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  86% (1217/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  87% (1232/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  88% (1246/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  89% (1260/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  90% (1274/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  91% (1288/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  92% (1302/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  93% (1316/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  94% (1331/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  95% (1345/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  96% (1359/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  97% (1373/1415), 764.01 KiB | 270.00 KiB/sremote: Total 1415 (delta 0), reused 0 (delta 0), pack-reused 1415[K
+Receiving objects:  98% (1387/1415), 764.01 KiB | 270.00 KiB/sReceiving objects:  99% (1401/1415), 764.01 KiB | 270.00 KiB/sReceiving objects: 100% (1415/1415), 764.01 KiB | 270.00 KiB/sReceiving objects: 100% (1415/1415), 898.86 KiB | 284.00 KiB/s, done.
+Resolving deltas:   0% (0/726)Resolving deltas:   1% (13/726)Resolving deltas:   3% (22/726)Resolving deltas:   6% (45/726)Resolving deltas:   7% (54/726)Resolving deltas:   8% (59/726)Resolving deltas:  10% (75/726)Resolving deltas:  13% (96/726)Resolving deltas:  19% (141/726)Resolving deltas:  21% (159/726)Resolving deltas:  22% (162/726)Resolving deltas:  24% (176/726)Resolving deltas:  27% (198/726)Resolving deltas:  29% (216/726)Resolving deltas:  35% (255/726)Resolving deltas:  37% (273/726)Resolving deltas:  38% (281/726)Resolving deltas:  39% (284/726)Resolving deltas:  40% (292/726)Resolving deltas:  45% (333/726)Resolving deltas:  49% (356/726)Resolving deltas:  50% (367/726)Resolving deltas:  51% (371/726)Resolving deltas:  52% (379/726)Resolving deltas:  53% (385/726)Resolving deltas:  54% (395/726)Resolving deltas:  57% (416/726)Resolving deltas:  59% (433/726)Resolving deltas:  62% (456/726)Resolving deltas:  63% (458/726)Resolving deltas:  64% (465/726)Resolving deltas:  65% (477/726)Resolving deltas:  66% (480/726)Resolving deltas:  67% (489/726)Resolving deltas:  68% (497/726)Resolving deltas:  69% (501/726)Resolving deltas:  70% (510/726)Resolving deltas:  71% (517/726)Resolving deltas:  72% (525/726)Resolving deltas:  73% (530/726)Resolving deltas:  75% (545/726)Resolving deltas:  78% (571/726)Resolving deltas:  81% (593/726)Resolving deltas:  82% (596/726)Resolving deltas:  83% (603/726)Resolving deltas:  85% (618/726)Resolving deltas:  86% (627/726)Resolving deltas:  87% (632/726)Resolving deltas:  88% (642/726)Resolving deltas:  90% (657/726)Resolving deltas:  94% (683/726)Resolving deltas:  95% (691/726)Resolving deltas:  96% (698/726)Resolving deltas:  98% (712/726)Resolving deltas: 100% (726/726)Resolving deltas: 100% (726/726), done.
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ mv personal-website/[K  code[1Pode[1Pde[1Pe[Kweb1
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ ls
+[0m[01;34mweb1[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ vim Dockerfile
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;28r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[28;1H"Dockerfile" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                         [3;1H~                                                                                                         [4;1H~                                                                                                         [5;1H~                                                                                                         [6;1H~                                                                                                         [7;1H~                                                                                                         [8;1H~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                                                         [3;1H~                                                                                                         [4;1H~                                                                                                         [5;1H~                                                                                                         [6;1H~                                                                                                         [7;1H~                                                                                                         [8;1H~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H0,0-1[9CAll"Dockerfile" [New File][1;1H[?25h[?25l[28;79Hi[1;1H[28;79H [1;1H[28;1H[1m-- INSERT --[m[28;14H[K[28;89H0,1[11CAll[1;1H[?25h[?25lF[28;89H1,2[1;2H[?25h[?25lR[28;91H3[1;3H[?25h[?25lO[28;91H4[1;4H[?25h[?25lM[28;91H5[1;5H[?25h[?25l[93mFROM [m[28;91H6[1;6H[?25h[?25lc[28;91H7[1;7H[?25h[?25le[28;91H8[1;8H[?25h[?25ln[28;91H9[1;9H[?25h[?25lt[28;91H10[1;10H[?25h[?25lo[28;92H1[1;11H[?25h[?25ls[28;92H2[1;12H[?25h[?25l[2;1H[K[28;89H2,1 [2;1H[?25h[?25lM[28;91H2[2;2H[?25h[?25lA[28;91H3[2;3H[?25h[?25li[28;91H4[2;4H[?25h[?25ln[28;91H5[2;5H[?25h[?25l[2;4H[K[28;91H4[2;4H[?25h[?25l[2;3H[K[28;91H3[2;3H[?25h[?25lI[28;91H4[2;4H[?25h[?25lN[28;91H5[2;5H[?25h[?25lA[28;91H6[2;6H[?25h[?25l[2;5H[K[28;91H5[2;5H[?25h[?25lT[28;91H6[2;6H[?25h[?25lA[28;91H7[2;7H[?25h[?25lI[28;91H8[2;8H[?25h[?25lN[28;91H9[2;9H[?25h[?25lE[28;91H10[2;10H[?25h[?25lR[28;92H1[2;11H[?25h[?25l[93mMAINTAINER [m[28;92H2[2;12H[?25h[?25ld[28;92H3[2;13H[?25h[?25li[28;92H4[2;14H[?25h[?25le[28;92H5[2;15H[?25h[?25l[2;14H[K[28;92H4[2;14H[?25h[?25lp[28;92H5[2;15H[?25h[?25le[28;92H6[2;16H[?25h[?25ls[28;92H7[2;17H[?25h[?25lh[28;92H8[2;18H[?25h[?25l0[28;92H9[2;19H[?25h[?25l1[28;91H20[2;20H[?25h[?25l6[28;92H1[2;21H[?25h[?25l@[28;92H2[2;22H[?25h[?25lg[28;92H3[2;23H[?25h[?25lm[28;92H4[2;24H[?25h[?25la[28;92H5[2;25H[?25h[?25li[28;92H6[2;26H[?25h[?25ll[28;92H7[2;27H[?25h[?25l.[28;92H8[2;28H[?25h[?25lc[28;92H9[2;29H[?25h[?25lo[28;91H30[2;30H[?25h[?25lm[28;92H1[2;31H[?25h[?25l[3;1H[K[28;89H3,1 [3;1H[?25h[?25lE[28;91H2[3;2H[?25h[?25lN[28;91H3[3;3H[?25h[?25lV[28;91H4[3;4H[?25h[?25l[93mENV [m[28;91H5[3;5H[?25h[?25lx[28;91H6[3;6H[?25h[?25l=[28;91H7[3;7H[?25h[?25lw[28;91H8[3;8H[?25h[?25le[28;91H9[3;9H[?25h[?25lb[28;91H10[3;10H[?25h[?25l1[28;92H1[3;11H[?25h[?25l[4;1H[K[28;89H4,1 [4;1H[?25h[?25lR[28;91H2[4;2H[?25h[?25lU[28;91H3[4;3H[?25h[?25lN[28;91H4[4;4H[?25h[?25l[93mRUN [m[28;91H5[4;5H[?25h[?25ld[28;91H6[4;6H[?25h[?25ln[28;91H7[4;7H[?25h[?25lf[28;91H8[4;8H[?25h[?25l[28;91H9[4;9H[?25h[?25li[28;91H10[4;10H[?25h[?25ln[28;92H1[4;11H[?25h[?25ls[28;92H2[4;12H[?25h[?25lt[28;92H3[4;13H[?25h[?25la[28;92H4[4;14H[?25h[?25ll[28;92H5[4;15H[?25h[?25ll[28;92H6[4;16H[?25h[?25l[28;92H7[4;17H[?25h[?25lh[28;92H8[4;18H[?25h[?25lt[28;92H9[4;19H[?25h[?25lt[28;91H20[4;20H[?25h[?25lp[28;92H1[4;21H[?25h[?25l[28;92H2[4;22H[?25h[?25l-[28;92H3[4;23H[?25h[?25ly[28;92H4[4;24H[?25h[?25l[28;92H5[4;25H[?25h[?25l[5;1H[K[28;89H5,1 [5;1H[?25h[?25lA[28;91H2[5;2H[?25h[?25lD[28;91H3[5;3H[?25h[?25lD[28;91H4[5;4H[?25h[?25l[93mADD [m[28;91H5[5;5H[?25h[?25lw[28;91H6[5;6H[?25h[?25le[28;91H7[5;7H[?25h[?25lb[28;91H8[5;8H[?25h[?25l[28;91H9[5;9H[?25h[?25l[28;91H8[5;8H[?25h[?25l1[28;91H9[5;9H[?25h[?25l[28;91H10[5;10H[?25h[?25l[28;92H1[5;11H[?25h[?25l/[28;92H2[5;12H[?25h[?25lv[28;92H3[5;13H[?25h[?25la[28;92H4[5;14H[?25h[?25lr[28;92H5[5;15H[?25h[?25l/[28;92H6[5;16H[?25h[?25lw[28;92H7[5;17H[?25h[?25lw[28;92H8[5;18H[?25h[?25lw[28;92H9[5;19H[?25h[?25l/[28;91H20[5;20H[?25h[?25lh[28;92H1[5;21H[?25h[?25lt[28;92H2[5;22H[?25h[?25lm[28;92H3[5;23H[?25h[?25ll[28;92H4[5;24H[?25h[?25l/[28;92H5[5;25H[?25h[?25l[6;1H[K[28;89H6,1 [6;1H[?25h[?25le[28;91H2[6;2H[?25h[?25lx[28;91H3[6;3H[?25h[?25l[6;2H[K[28;91H2[6;2H[?25h[?25l[6;1H[K[28;91H1[6;1H[?25h[?25lE[28;91H2[6;2H[?25h[?25lX[28;91H3[6;3H[?25h[?25lP[28;91H4[6;4H[?25h[?25lO[28;91H5[6;5H[?25h[?25lS[28;91H6[6;6H[?25h[?25lE[28;91H7[6;7H[?25h[?25l[93mEXPOSE [m[28;91H8[6;8H[?25h[?25l8[28;91H9[6;9H[?25h[?25l0[28;91H10[6;10H[?25h[?25l[7;1H[K[28;89H7,1 [7;1H[?25h[?25lE[28;91H2[7;2H[?25h[?25lN[28;91H3[7;3H[?25h[?25lT[28;91H4[7;4H[?25h[?25lR[28;91H5[7;5H[?25h[?25lY[28;91H6[7;6H[?25h[?25lP[28;91H7[7;7H[?25h[?25lO[28;91H8[7;8H[?25h[?25lI[28;91H9[7;9H[?25h[?25lN[28;91H10[7;10H[?25h[?25lT[28;92H1[7;11H[?25h[?25l[93mENTRYPOINT [m[28;92H2[7;12H[?25h[?25lh[28;92H3[7;13H[?25h[?25lt[28;92H4[7;14H[?25h[?25lt[28;92H5[7;15H[?25h[?25lp[28;92H6[7;16H[?25h[?25ld[28;92H7[7;17H[?25h[?25l[28;92H8[7;18H[?25h[?25l-[28;92H9[7;19H[?25h[?25lD[28;91H20[7;20H[?25h[?25lF[28;92H1[7;21H[?25h[?25lO[28;92H2[7;22H[?25h[?25lR[28;92H3[7;23H[?25h[?25lE[28;92H4[7;24H[?25h[?25lG[28;92H5[7;25H[?25h[?25lR[28;92H6[7;26H[?25h[?25lO[28;92H7[7;27H[?25h[?25lU[28;92H8[7;28H[?25h[?25lN[28;92H9[7;29H[?25h[?25lD[28;91H30[7;30H[?25h[28;1H[K[7;29H[?25l[28;79H^[[7;29H[28;79H  [7;30H[28;89H7,29[10CAll[7;29H[?25h[?25l[28;79H:[7;29H[28;79H[K[28;1H:[?2004h[?25hwq[?25l[?2004l"Dockerfile" [New] 7L, 144C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ ls
+Dockerfile  [0m[01;34mweb1[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ vim docker-compose.yml
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;28r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[28;1H"docker-compose.yml" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                         [3;1H~                                                                                                         [4;1H~                                                                                                         [5;1H~                                                                                                         [6;1H~                                                                                                         [7;1H~                                                                                                         [8;1H~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                                                         [3;1H~                                                                                                         [4;1H~                                                                                                         [5;1H~                                                                                                         [6;1H~                                                                                                         [7;1H~                                                                                                         [8;1H~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H0,0-1[9CAll"docker-compose.yml" [New File][1;1H[?25h[?25l[28;79Hi[1;1H[28;79H [1;1H[28;1H[1m-- INSERT --[m[28;13H[K[28;89H0,1[11CAll[1;1H[?25h[?25lv[28;89H1,2[1;2H[?25h[?25le[28;91H3[1;3H[?25h[?25lr[28;91H4[1;4H[?25h[?25ls[28;91H5[1;5H[?25h[?25li[28;91H6[1;6H[?25h[?25lo[28;91H7[1;7H[?25h[?25ln[28;91H8[1;8H[?25h[?25l[1m[96mversion[m[38;5;224m:[m[28;91H9[1;9H[?25h[?25lversion:'[28;91H10[1;10H[?25h[?25l'[28;92H1[1;11H[?25h[?25l[28;92H0[1;10H[?25h[?25l3'[28;92H1[1;11H[?25h[?25l.'[28;92H2[1;12H[?25h[?25l8'[28;92H3[1;13H[?25h[?25l[28;92H4[1;14H[?25h[?25l[2;1H[K[28;89H2,1 [2;1H[?25h[?25ls[28;91H2[2;2H[?25h[?25le[28;91H3[2;3H[?25h[?25lr[28;91H4[2;4H[?25h[?25lv[28;91H5[2;5H[?25h[?25li[28;91H6[2;6H[?25h[?25lc[28;91H7[2;7H[?25h[?25le[28;91H8[2;8H[?25h[?25ls[28;91H9[2;9H[?25h[?25l[1m[96mservices[m[38;5;224m:[m[28;91H10[2;10H[?25h[?25l
+        [3;9H[K[28;89H3,9 [3;9H[?25h[?25l[28;89H2[2;9H[?25h[?25l[28;89H1[1;9H[?25h[?25l[1m[96mversion[m[38;5;224m:[m [95m'3.8'[m[28;91H10[1;10H[?25h[?25l[28;89H2[2;10H[?25h[?25l[3;27r[3;1H[L[1;28r[28;89H[K[28;89H3,9[11CAll[3;9H[?25h[?25la[28;91H10[3;10H[?25h[?25lp[28;92H1[3;11H[?25h[?25lp[28;92H2[3;12H[?25h[?25l[3;11H[K[28;92H1[3;11H[?25h[?25l[3;10H[K[28;92H0[3;10H[?25h[?25l[3;9H[K[28;91H9 [3;9H[?25h[?25l[28;91H8[3;8H[?25h[?25l[28;91H7[3;7H[?25h[?25l[28;91H6[3;6H[?25h[?25l[28;91H5[3;5H[?25h[?25l[28;91H4[3;4H[?25h[?25la[28;91H5[3;5H[?25h[?25lp[28;91H6[3;6H[?25h[?25lp[28;91H7[3;7H[?25h[?25l1[28;91H8[3;8H[?25h[?25l[1m[96mapp1[m[38;5;224m:[m[28;91H9[3;9H[?25h[?25l[4;27r[4;1H[L[1;28r[28;89H[K[28;89H4,12[10CAll[4;12H[?25h[?25l[28;92H1[4;11H[?25h[?25l[28;92H0[4;10H[?25h[?25l[28;91H9 [4;9H[?25h[?25l[28;91H8[4;8H[?25h[?25l[28;91H7[4;7H[?25h[?25li[28;91H8[4;8H[?25h[?25lm[28;91H9[4;9H[?25h[?25la[28;91H10[4;10H[?25h[?25lg[28;92H1[4;11H[?25h[?25le[28;92H2[4;12H[?25h[?25l[1m[96mimage[m[38;5;224m:[m[28;92H3[4;13H[?25h[?25l[28;92H4[4;14H[?25h[?25ld[28;92H5[4;15H[?25h[?25li[28;92H6[4;16H[?25h[?25lp[28;92H7[4;17H[?25h[?25le[28;92H8[4;18H[?25h[?25ls[28;92H9[4;19H[?25h[?25lh[28;91H20[4;20H[?25h[?25l:[28;92H1[4;21H[?25h[?25ld[28;92H2[4;22H[?25h[?25l[4;21H[K[28;92H1[4;21H[?25h[?25lw[28;92H2[4;22H[?25h[?25le[28;92H3[4;23H[?25h[?25lb[28;92H4[4;24H[?25h[?25la[28;92H5[4;25H[?25h[?25lp[28;92H6[4;26H[?25h[?25lp[28;92H7[4;27H[?25h[?25l1[28;92H8[4;28H[?25h[?25l[5;27r[5;1H[L[1;28r[28;89H[K[28;89H5,7[11CAll[5;7H[?25h[?25lb[28;91H8[5;8H[?25h[?25lu[28;91H9[5;9H[?25h[?25li[28;91H10[5;10H[?25h[?25ll[28;92H1[5;11H[?25h[?25ld[28;92H2[5;12H[?25h[?25l[28;92H3[5;13H[?25h[?25l[28;92H2[5;12H[?25h[?25l[1m[96mbuild[m[38;5;224m:[m[28;92H3[5;13H[?25h[?25l[28;92H4[5;14H[?25h[?25l.[28;92H5[5;15H[?25h[?25l[6;27r[6;1H[L[1;28r[28;89H[K[28;89H6,7[11CAll[6;7H[?25h[?25lc[28;91H8[6;8H[?25h[?25lo[28;91H9[6;9H[?25h[?25ln[28;91H10[6;10H[?25h[?25lt[28;92H1[6;11H[?25h[?25la[28;92H2[6;12H[?25h[?25li[28;92H3[6;13H[?25h[?25ln[28;92H4[6;14H[?25h[?25le[28;92H5[6;15H[?25h[?25lr[28;92H6[6;16H[?25h[?25l_[28;92H7[6;17H[?25h[?25ln[28;92H8[6;18H[?25h[?25la[28;92H9[6;19H[?25h[?25lm[28;91H20[6;20H[?25h[?25le[28;92H1[6;21H[?25h[?25l[28;92H2[6;22H[?25h[?25l[28;92H1[6;21H[?25h[?25l[6;7H[1m[96mcontainer_name[m[38;5;224m:[m[28;92H2[6;22H[?25h[?25l[28;92H3[6;23H[?25h[?25ld[28;92H4[6;24H[?25h[?25li[28;92H5[6;25H[?25h[?25lp[28;92H6[6;26H[?25h[?25le[28;92H7[6;27H[?25h[?25ls[28;92H8[6;28H[?25h[?25lh[28;92H9[6;29H[?25h[?25lc[28;91H30[6;30H[?25h[?25l1[28;92H1[6;31H[?25h[?25l1[28;92H2[6;32H[?25h[?25l[6;31H[K[28;92H1[6;31H[?25h[?25l[6;30H[K[28;92H0[6;30H[?25h[?25l[6;29H[K[28;91H29[6;29H[?25h[?25l[6;28H[K[28;92H8[6;28H[?25h[?25l[6;27H[K[28;92H7[6;27H[?25h[?25l[6;26H[K[28;92H6[6;26H[?25h[?25l[6;25H[K[28;92H5[6;25H[?25h[?25l[6;24H[K[28;92H4[6;24H[?25h[?25l[6;23H[K[28;92H3[6;23H[?25h[?25lw[28;92H4[6;24H[?25h[?25le[28;92H5[6;25H[?25h[?25lb[28;92H6[6;26H[?25h[?25lc[28;92H7[6;27H[?25h[?25l1[28;92H8[6;28H[?25h[?25l1[28;92H9[6;29H[?25h[?25l[7;27r[7;1H[L[1;28r[28;89H[K[28;89H7,7[11CAll[7;7H[?25h[?25lp[28;91H8[7;8H[?25h[?25lo[28;91H9[7;9H[?25h[?25lr[28;91H10[7;10H[?25h[?25lt[28;92H1[7;11H[?25h[?25ls[28;92H2[7;12H[?25h[?25l[1m[96mports[m[38;5;224m:[m[28;92H3[7;13H[?25h[?25l[8;27r[8;1H[L[1;28r[28;89H[K[28;89H8,15[10CAll[8;15H[?25h[?25l[28;92H4[8;14H[?25h[?25l[28;92H3[8;13H[?25h[?25l[28;92H2[8;12H[?25h[?25l[28;92H1[8;11H[?25h[?25l[28;92H0[8;10H[?25h[?25l[28;91H9 [8;9H[?25h[?25l[28;91H8[8;8H[?25h[?25l-[28;91H9[8;9H[?25h[?25l[93m- [m[28;91H10[8;10H[?25h[?25l[95m"[m[28;92H1[8;11H[?25h[?25l[95m"[m[28;92H2[8;12H[?25h[?25l[28;92H1[8;11H[?25h[?25l[95m9"[m[28;92H2[8;12H[?25h[?25l[95m9"[m[28;92H3[8;13H[?25h[?25l[95m9"[m[28;92H4[8;14H[?25h[?25l[95m1"[m[28;92H5[8;15H[?25h[?25l[95m:"[m[28;92H6[8;16H[?25h[?25l[95m8"[m[28;92H7[8;17H[?25h[?25l[95m0"[m[28;92H8[8;18H[?25h[?25l[28;92H9[8;19H[?25h[?25l[9;27r[9;1H[L[1;28r[28;89H[K[28;89H9,10[10CAll[9;10H[?25h[28;1H[K[9;1H[?25l[28;79H^[[9;1H[28;79H  [9;10H[28;89H9,0-1[9CAll[9;1H[?25h[?25l[28;79H:[9;1H[28;79H[K[28;1H:[?2004h[?25hwq[?25l[?2004l"docker-compose.yml" [New] 10L, 140C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker-compose po[K[Kup -d
+Creating network "webapp1_default" with the default driver
+Building app1
+Step 1/7 : FROM centos
+ ---> 470671670cac
+Step 2/7 : MAINTAINER dipesh016@gmail.com
+ ---> Using cache
+ ---> a0a1952819db
+Step 3/7 : ENV x=web1
+ ---> Running in c3f74abfa2ed
+Removing intermediate container c3f74abfa2ed
+ ---> 5bddbbc28f68
+Step 4/7 : RUN dnf install http -y
+ ---> Running in b9677ee67451
+CentOS-8 - AppStream                            126 kB/s | 5.8 MB     00:47    
+CentOS-8 - Base                                 188 kB/s | 2.2 MB     00:12    
+CentOS-8 - Extras                               1.4 kB/s | 6.7 kB     00:04    
+Last metadata expiration check: 0:00:01 ago on Sat Jul  4 02:52:37 2020.
+No match for argument: http
+[91mError: Unable to find a match: http
+[0m[31mERROR[0m: Service 'app1' failed to build: The command '/bin/sh -c dnf install http -y' returned a non-zero code: 1
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker-compose up -dvim docker-compose.ymlls[Kvim docker-compose.ymlls[Kvim Dockerfile
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;28r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[28;1H"Dockerfile" 7L, 144C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mFROM [mcentos
+[38;5;130mMAINTAINER [mdipesh016@gmail.com
+[38;5;130mENV [mx=web1
+[38;5;130mRUN [mdnf install http -y
+[38;5;130mADD [mweb1  /var/www/html/
+[38;5;130mEXPOSE [m80
+[38;5;130mENTRYPOINT [mhttpd -DFOREGROUND
+[94m~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H7,29[10CAll[7;29H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[93mFROM [mcentos
+[93mMAINTAINER [mdipesh016@gmail.com
+[93mENV [mx=web1
+[93mRUN [mdnf install http -y
+[93mADD [mweb1  /var/www/html/
+[93mEXPOSE [m80
+[93mENTRYPOINT [mhttpd -DFOREGROUND
+[94m~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H7,29[10CAll"Dockerfile" 7L, 144C[7;29H[?25h[?25l[28;79H~@k[7;29H[28;79H   [7;28H[28;92H8[7;28H[?25h[?25l[28;79H~@k[7;28H[28;79H   [6;9H[28;89H6,9 [6;9H[?25h[?25l[28;79H~@k[6;9H[28;79H   [5;24H[28;89H5,24[5;24H[?25h[?25l[28;79Hi[5;24H[28;79H [5;24H[28;1H[1m-- INSERT --[m[28;14H[K[28;89H5,24[10CAll[5;24H[?25h[?25l[28;89H4[4;24H[?25h[?25l[28;92H3[4;23H[?25h[?25l[28;92H2[4;22H[?25h[?25l[28;92H1[4;21H[?25h[?25ld -y[28;92H2[4;22H[?25h[?25l[28;89H5[5;22H[?25h[?25l[28;89H6,10[6;10H[?25h[?25l[28;89H7,22[7;22H[?25h[?25l[28;92H3[7;23H[?25h[?25l[28;92H4[7;24H[?25h[?25l[28;92H5[7;25H[?25h[?25l[28;92H6[7;26H[?25h[?25l[28;92H7[7;27H[?25h[?25l[28;92H8[7;28H[?25h[?25l[28;92H9[7;29H[?25h[?25l[28;91H30[7;30H[?25h[28;1H[K[7;29H[?25l[28;79H^[[7;29H[28;79H  [7;30H[28;89H7,29[10CAll[7;29H[?25h[?25l[28;79H:[7;29H[28;79H[K[28;1H:[?2004h[?25hwq[?25l[?2004l"Dockerfile" 7L, 145C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ vim Dockerfiledocker-compose up -dvim docker-compose.yml[2Pdocker-compose up -d[6Pvim Dockerfile[K
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ vim Dockerfiledocker-compose up -d
+Building app1
+Step 1/7 : FROM centos
+ ---> 470671670cac
+Step 2/7 : MAINTAINER dipesh016@gmail.com
+ ---> Using cache
+ ---> a0a1952819db
+Step 3/7 : ENV x=web1
+ ---> Using cache
+ ---> 5bddbbc28f68
+Step 4/7 : RUN dnf install httpd -y
+ ---> Running in a6f1af6db7a5
+CentOS-8 - AppStream                            113 kB/s | 5.8 MB     00:52    
+CentOS-8 - Base                                 265 kB/s | 2.2 MB     00:08    
+CentOS-8 - Extras                               4.3 kB/s | 6.7 kB     00:01    
+Last metadata expiration check: 0:00:01 ago on Sat Jul  4 02:55:13 2020.
+Dependencies resolved.
+================================================================================
+ Package           Arch   Version                               Repo       Size
+================================================================================
+Installing:
+ httpd             x86_64 2.4.37-21.module_el8.2.0+382+15b0afa8 AppStream 1.7 M
+Installing dependencies:
+ apr               x86_64 1.6.3-9.el8                           AppStream 125 k
+ apr-util          x86_64 1.6.1-6.el8                           AppStream 105 k
+ httpd-filesystem  noarch 2.4.37-21.module_el8.2.0+382+15b0afa8 AppStream  36 k
+ httpd-tools       x86_64 2.4.37-21.module_el8.2.0+382+15b0afa8 AppStream 103 k
+ mod_http2         x86_64 1.11.3-3.module_el8.2.0+307+4d18d695  AppStream 157 k
+ brotli            x86_64 1.0.6-1.el8                           BaseOS    323 k
+ centos-logos-httpd
+                   noarch 80.5-2.el8                            BaseOS     24 k
+ mailcap           noarch 2.1.48-3.el8                          BaseOS     39 k
+Installing weak dependencies:
+ apr-util-bdb      x86_64 1.6.1-6.el8                           AppStream  25 k
+ apr-util-openssl  x86_64 1.6.1-6.el8                           AppStream  27 k
+Enabling module streams:
+ httpd                    2.4                                                  
+
+Transaction Summary
+================================================================================
+Install  11 Packages
+
+Total download size: 2.6 M
+Installed size: 7.5 M
+Downloading Packages:
+(1/11): apr-util-bdb-1.6.1-6.el8.x86_64.rpm      56 kB/s |  25 kB     00:00    
+(2/11): apr-util-openssl-1.6.1-6.el8.x86_64.rpm  40 kB/s |  27 kB     00:00    
+(3/11): apr-util-1.6.1-6.el8.x86_64.rpm          89 kB/s | 105 kB     00:01    
+(4/11): httpd-filesystem-2.4.37-21.module_el8.2  20 kB/s |  36 kB     00:01    
+(5/11): httpd-tools-2.4.37-21.module_el8.2.0+38  41 kB/s | 103 kB     00:02    
+(6/11): mod_http2-1.11.3-3.module_el8.2.0+307+4 107 kB/s | 157 kB     00:01    
+(7/11): apr-1.6.3-9.el8.x86_64.rpm               14 kB/s | 125 kB     00:09    
+(8/11): brotli-1.0.6-1.el8.x86_64.rpm            92 kB/s | 323 kB     00:03    
+(9/11): centos-logos-httpd-80.5-2.el8.noarch.rp  16 kB/s |  24 kB     00:01    
+(10/11): mailcap-2.1.48-3.el8.noarch.rpm         92 kB/s |  39 kB     00:00    
+(11/11): httpd-2.4.37-21.module_el8.2.0+382+15b 157 kB/s | 1.7 MB     00:10    
+--------------------------------------------------------------------------------
+Total                                           185 kB/s | 2.6 MB     00:14     
+[91mwarning: /var/cache/dnf/AppStream-02e86d1c976ab532/packages/apr-1.6.3-9.el8.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 8483c65d: NOKEY
+[0mCentOS-8 - AppStream                            161 kB/s | 1.6 kB     00:00    
+[91mImporting GPG key 0x8483C65D:
+ Userid     : "CentOS (CentOS Official Signing Key) <security@centos.org>"
+ Fingerprint: 99DB 70FA E1D7 CE22 7FB6 4882 05B5 55B3 8483 C65D
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+[0mKey imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : apr-1.6.3-9.el8.x86_64                                1/11 
+  Running scriptlet: apr-1.6.3-9.el8.x86_64                                1/11 
+  Installing       : apr-util-bdb-1.6.1-6.el8.x86_64                       2/11 
+  Installing       : apr-util-openssl-1.6.1-6.el8.x86_64                   3/11 
+  Installing       : apr-util-1.6.1-6.el8.x86_64                           4/11 
+  Running scriptlet: apr-util-1.6.1-6.el8.x86_64                           4/11 
+  Installing       : httpd-tools-2.4.37-21.module_el8.2.0+382+15b0afa8.    5/11 
+  Installing       : mailcap-2.1.48-3.el8.noarch                           6/11 
+  Installing       : centos-logos-httpd-80.5-2.el8.noarch                  7/11 
+  Installing       : brotli-1.0.6-1.el8.x86_64                             8/11 
+  Running scriptlet: httpd-filesystem-2.4.37-21.module_el8.2.0+382+15b0    9/11 
+  Installing       : httpd-filesystem-2.4.37-21.module_el8.2.0+382+15b0    9/11 
+  Installing       : mod_http2-1.11.3-3.module_el8.2.0+307+4d18d695.x86   10/11 
+  Installing       : httpd-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64   11/11 
+  Running scriptlet: httpd-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64   11/11 
+  Verifying        : apr-1.6.3-9.el8.x86_64                                1/11 
+  Verifying        : apr-util-1.6.1-6.el8.x86_64                           2/11 
+  Verifying        : apr-util-bdb-1.6.1-6.el8.x86_64                       3/11 
+  Verifying        : apr-util-openssl-1.6.1-6.el8.x86_64                   4/11 
+  Verifying        : httpd-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64    5/11 
+  Verifying        : httpd-filesystem-2.4.37-21.module_el8.2.0+382+15b0    6/11 
+  Verifying        : httpd-tools-2.4.37-21.module_el8.2.0+382+15b0afa8.    7/11 
+  Verifying        : mod_http2-1.11.3-3.module_el8.2.0+307+4d18d695.x86    8/11 
+  Verifying        : brotli-1.0.6-1.el8.x86_64                             9/11 
+  Verifying        : centos-logos-httpd-80.5-2.el8.noarch                 10/11 
+  Verifying        : mailcap-2.1.48-3.el8.noarch                          11/11 
+
+Installed:
+  httpd-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64                            
+  apr-util-bdb-1.6.1-6.el8.x86_64                                               
+  apr-util-openssl-1.6.1-6.el8.x86_64                                           
+  apr-1.6.3-9.el8.x86_64                                                        
+  apr-util-1.6.1-6.el8.x86_64                                                   
+  httpd-filesystem-2.4.37-21.module_el8.2.0+382+15b0afa8.noarch                 
+  httpd-tools-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64                      
+  mod_http2-1.11.3-3.module_el8.2.0+307+4d18d695.x86_64                         
+  brotli-1.0.6-1.el8.x86_64                                                     
+  centos-logos-httpd-80.5-2.el8.noarch                                          
+  mailcap-2.1.48-3.el8.noarch                                                   
+
+Complete!
+Removing intermediate container a6f1af6db7a5
+ ---> 7d771302ee5d
+Step 5/7 : ADD web1  /var/www/html/
+ ---> c647337ed794
+Step 6/7 : EXPOSE 80
+ ---> Running in 094614be4357
+Removing intermediate container 094614be4357
+ ---> eede1bcfc690
+Step 7/7 : ENTRYPOINT httpd -DFOREGROUND
+ ---> Running in ca0d71cc338e
+Removing intermediate container ca0d71cc338e
+ ---> 02e2ac491139
+[2K
+Successfully built 02e2ac491139
+Successfully tagged dipesh:webapp1
+[33mWARNING[0m: Image for service app1 was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating webc11 ... 
+[1A[2KCreating webc11 ... [32mdone[0m[1B]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker [K-compose ps
+ Name               Command              State          Ports        
+---------------------------------------------------------------------
+webc11   /bin/sh -c httpd -DFOREGROUND   Up      0.0.0.0:9991->80/tcp
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker-compose psup -d[K[K[K[K[Kdown
+Stopping webc11 ... 
+[1A[2KStopping webc11 ... [32mdone[0m[1BRemoving webc11 ... 
+[1A[2KRemoving webc11 ... [32mdone[0m[1BRemoving network webapp1_default
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ ls
+docker-compose.yml  Dockerfile  [0m[01;34mweb1[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ git clone https://github.com/Mehedi61/Login-Signup-form.git
+Cloning into 'Login-Signup-form'...
+remote: Enumerating objects: 36, done.[K
+remote: Total 36 (delta 0), reused 0 (delta 0), pack-reused 36[K
+Unpacking objects:   2% (1/36)Unpacking objects:   5% (2/36)Unpacking objects:   8% (3/36)Unpacking objects:  11% (4/36)Unpacking objects:  13% (5/36)Unpacking objects:  16% (6/36)Unpacking objects:  19% (7/36)Unpacking objects:  22% (8/36)Unpacking objects:  25% (9/36)Unpacking objects:  27% (10/36)Unpacking objects:  30% (11/36)Unpacking objects:  33% (12/36)Unpacking objects:  36% (13/36)Unpacking objects:  38% (14/36)Unpacking objects:  41% (15/36)Unpacking objects:  44% (16/36)Unpacking objects:  47% (17/36)Unpacking objects:  50% (18/36)Unpacking objects:  52% (19/36)Unpacking objects:  55% (20/36)Unpacking objects:  58% (21/36)Unpacking objects:  61% (22/36)Unpacking objects:  63% (23/36)Unpacking objects:  66% (24/36)Unpacking objects:  69% (25/36)Unpacking objects:  72% (26/36)Unpacking objects:  75% (27/36)Unpacking objects:  77% (28/36)Unpacking objects:  80% (29/36)Unpacking objects:  83% (30/36)Unpacking objects:  86% (31/36)Unpacking objects:  88% (32/36)Unpacking objects:  91% (33/36)Unpacking objects:  94% (34/36)Unpacking objects:  97% (35/36)Unpacking objects: 100% (36/36)Unpacking objects: 100% (36/36), 5.68 KiB | 18.00 KiB/s, done.
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ dock[K[K[K[Kls
+docker-compose.yml  Dockerfile  [0m[01;34mLogin-Signup-form[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ ls [K[K[Kmv lo[K[KLogin-Signup-form/[K web1
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ cat Dockerfile 
+FROM centos
+MAINTAINER dipesh016@gmail.com
+ENV x=web1
+RUN dnf install httpd -y 
+ADD web1  /var/www/html/
+EXPOSE 80
+ENTRYPOINT httpd -DFOREGROUND
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker-compose up -d
+Creating network "webapp1_default" with the default driver
+Creating webc11 ... 
+[1A[2KCreating webc11 ... [32mdone[0m[1B]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ ls
+docker-compose.yml  Dockerfile  [0m[01;34mweb1[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ cd web1
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1/web1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1/web1[00m$ ls
+_config.yml  login.html  login_style.css  README.md  signup.html  signup_style.css
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1/web1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1/web1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1/web1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1/web1[00m$ mv login.html index.hml
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1/web1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1/web1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1/web1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1/web1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1/web1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1/web1[00m$ cd ..
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker-compose dp[Kown
+Stopping webc11 ... 
+[1A[2KStopping webc11 ... [32mdone[0m[1BRemoving webc11 ... 
+[1A[2KRemoving webc11 ... [32mdone[0m[1BRemoving network webapp1_default
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker-compose downcd ..[Kmv login.html index.hmlls[Kcd web1ls[Kdocker-compose up -d
+Creating network "webapp1_default" with the default driver
+Creating webc11 ... 
+[1A[2KCreating webc11 ... [32mdone[0m[1B]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker-compose ps
+ Name               Command              State          Ports        
+---------------------------------------------------------------------
+webc11   /bin/sh -c httpd -DFOREGROUND   Up      0.0.0.0:9991->80/tcp
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ vim[K[K[Kdocker-compose down
+Stopping webc11 ... 
+[1A[2KStopping webc11 ... [32mdone[0m[1BRemoving webc11 ... 
+[1A[2KRemoving webc11 ... [32mdone[0m[1BRemoving network webapp1_default
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker-compose imags[Kes
+Container   Repository   Tag   Image Id   Size
+----------------------------------------------
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ docker [K-compose up --build -d
+Creating network "webapp1_default" with the default driver
+Building app1
+Step 1/7 : FROM centos
+ ---> 470671670cac
+Step 2/7 : MAINTAINER dipesh016@gmail.com
+ ---> Using cache
+ ---> a0a1952819db
+Step 3/7 : ENV x=web1
+ ---> Using cache
+ ---> 5bddbbc28f68
+Step 4/7 : RUN dnf install httpd -y
+ ---> Using cache
+ ---> 7d771302ee5d
+Step 5/7 : ADD web1  /var/www/html/
+ ---> 35ff9778a1d8
+Step 6/7 : EXPOSE 80
+ ---> Running in 1d607aeb4a44
+Removing intermediate container 1d607aeb4a44
+ ---> d6dfb5a6309b
+Step 7/7 : ENTRYPOINT httpd -DFOREGROUND
+ ---> Running in 5b2dca50e8e2
+Removing intermediate container 5b2dca50e8e2
+ ---> 49fd64a1160f
+[2K
+Successfully built 49fd64a1160f
+Successfully tagged dipesh:webapp1
+Creating webc11 ... 
+[1A[2KCreating webc11 ... [32mdone[0m[1B]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ git add .
+warning: adding embedded git repository: compose/webapp1/web1
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> compose/webapp1/web1[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached compose/webapp1/web1[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ git submodule add <url> compose/webapp1/web1
+bash: url: No such file or directory
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ git submodule add <url> compose/webapp1/web1
+bash: url: No such file or directory
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ git submodule add <url> compose/webapp1/web1[1P compose/webapp1/web1[1P compose/webapp1/web1[1P compose/webapp1/web1[1P compose/webapp1/web1[1P compose/webapp1/web1https://github.com/Mehedi61/Login-Signup-form.git compose/webapp1/web1[C[C[C[C[C[C[C[C[C[C[C[C[C
+Cloning into '/home/dipesh/dockersummer2020/compose/webapp1/compose/webapp1/web1'...
+remote: Enumerating objects: 36, done.[K
+remote: Total 36 (delta 0), reused 0 (delta 0), pack-reused 36[K
+Unpacking objects:   2% (1/36)Unpacking objects:   5% (2/36)Unpacking objects:   8% (3/36)Unpacking objects:  11% (4/36)Unpacking objects:  13% (5/36)Unpacking objects:  16% (6/36)Unpacking objects:  19% (7/36)Unpacking objects:  22% (8/36)Unpacking objects:  25% (9/36)Unpacking objects:  27% (10/36)Unpacking objects:  30% (11/36)Unpacking objects:  33% (12/36)Unpacking objects:  36% (13/36)Unpacking objects:  38% (14/36)Unpacking objects:  41% (15/36)Unpacking objects:  44% (16/36)Unpacking objects:  47% (17/36)Unpacking objects:  50% (18/36)Unpacking objects:  52% (19/36)Unpacking objects:  55% (20/36)Unpacking objects:  58% (21/36)Unpacking objects:  61% (22/36)Unpacking objects:  63% (23/36)Unpacking objects:  66% (24/36)Unpacking objects:  69% (25/36)Unpacking objects:  72% (26/36)Unpacking objects:  75% (27/36)Unpacking objects:  77% (28/36)Unpacking objects:  80% (29/36)Unpacking objects:  83% (30/36)Unpacking objects:  86% (31/36)Unpacking objects:  88% (32/36)Unpacking objects:  91% (33/36)Unpacking objects:  94% (34/36)Unpacking objects:  97% (35/36)Unpacking objects: 100% (36/36)Unpacking objects: 100% (36/36), 5.68 KiB | 129.00 KiB/s, done.
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ gut[K[Kit add .
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ git commit -m ""d"o"c"k"e"r"-"c"o"m"p"o"s"e"
+[master 6902f25] docker-compose
+ 5 files changed, 22 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 100644 compose/webapp1/Dockerfile
+ create mode 160000 compose/webapp1/compose/webapp1/web1
+ create mode 100644 compose/webapp1/docker-compose.yml
+ create mode 160000 compose/webapp1/web1
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ git push or[K[K
+Username for 'https://github.com': Dipesh9798
+Password for 'https://Dipesh9798@github.com': 
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  11% (1/9)Writing objects:  22% (2/9)Writing objects:  33% (3/9)Writing objects:  44% (4/9)Writing objects:  55% (5/9)Writing objects:  66% (6/9)Writing objects:  77% (7/9)Writing objects:  88% (8/9)Writing objects: 100% (9/9)Writing objects: 100% (9/9), 1.03 KiB | 351.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+remote: This repository moved. Please use the new location:[K
+remote:   https://github.com/Dipesh9798/dockersummer2020.git[K
+To https://github.com/Dipesh9798/docker_practice.git
+   0fd9480..6902f25  master -> master
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/webapp1[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/webapp1[00m$ d[Kcd .'[K.
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ mkdir multiwebapp 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose[00m$ cd multiwebapp/
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cp multiweb[K[K[KAppp[Klication/startweb.sh  startweb.sh
+cp: cannot stat 'multiApplication/startweb.sh': No such file or directory
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cp multiApplication/startweb.sh  startweb.sh[1@/[1@h[1@o[C[1@m[1@e/multiApplication/startweb.sh  startweb.sh [A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[CdmultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[CimultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[CpmultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[CemultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[CsmultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[ChmultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/multiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CdmultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[ComultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CcmultiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckersummer2020/multiApplication/startweb.sh  startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+cp: cannot stat '/home/dipesh/dockersummer2020/multiApplication/startweb.sh': No such file or directory
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cp /home/dipesh/dockersummer2020/multiApplication/startweb.sh  startweb.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/st[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/sta[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/star[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/start[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/startw[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/startwe[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/startweb[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/startweb.[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/startweb.s[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/startweb.sh[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/startweb.sh [C[1Pstartweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp/startweb.sh[C startweb.sh[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl/startweb.s[1@h[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C`/startweb.[1@s[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/startweb.s[1P[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CeApplicatio[12@n/startweb.s[C[C
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ ls
+startweb.sh
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ vim[K[K[Klscp /home/dipesh/dockersummer2020/multipleApplication/startweb.sh  startweb.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcompose/webapp1/D ockerfile Dockerfile
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cp /home/dipesh/dockersummer2020/compose/webapp1/Dockerfile Dockerfile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K/d ocker-compose.yml docker-compose.yml
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ ls
+docker-compose.yml  Dockerfile  startweb.sh
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cp /[2Plscp /home/dipesh/dockersummer2020/compose/webapp1/docker-compose.yml docker-compose.yml[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cw eb1 web1
+cp: -r not specified; omitting directory '/home/dipesh/dockersummer2020/compose/webapp1/web1'
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cp /home/dipesh/dockersummer2020/compose/webapp1/web1 web1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-/home/dipesh/dockersummer2020/compose/webapp1/w[1@e[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[Cr/home/dipesh/dockersummer2020/compose/webapp1/[1@w[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C /home/dipesh/dockersummer2020/compose/webapp1[1@/[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C
+
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ ls
+docker-compose.yml  Dockerfile  startweb.sh  [0m[01;34mweb1[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ lscp -r /home/dipesh/dockersummer2020/compose/webapp1/web1 web1[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C/home/dipesh/dockersummer2020/compose/webapp1/we[3P[C[C[C[C[C[C[C[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp /home/dipesh/dockersummer2020/compose/webapp1/docker-compose.yml docker-compose.yml[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CDo[C[C[C[C[16Pfile Dockerfile[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmi[KultipleApplication/webapp2 webapp2
+cp: -r not specified; omitting directory '/home/dipesh/dockersummer2020/multipleApplication/webapp2'
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cp /home/dipesh/dockersummer2020/multipleApplication/webapp2 webapp2[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C /home/dipesh/dockersummer2020/multipleApplicati[1@o[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C- /home/dipesh/dockersummer2020/multipleApplicat[1@i[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[Cr /home/dipesh/dockersummer2020/multipleApplica[1@t[A]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ [C[C[C[C[C
+
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ ls
+docker-compose.yml  Dockerfile  startweb.sh  [0m[01;34mweb1[0m  [01;34mwebapp2[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ mv webapp2/[K web2
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ ls
+docker-compose.yml  Dockerfile  startweb.sh  [0m[01;34mweb1[0m  [01;34mweb2[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ lsmv webapp2 web2ls[K[Kvim Dockerfile 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;28r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[28;1H"Dockerfile" 7L, 145C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mFROM [mcentos
+[38;5;130mMAINTAINER [mdipesh016@gmail.com
+[38;5;130mENV [mx=web1
+[38;5;130mRUN [mdnf install httpd -y
+[38;5;130mADD [mweb1  /var/www/html/
+[38;5;130mEXPOSE [m80
+[38;5;130mENTRYPOINT [mhttpd -DFOREGROUND
+[94m~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[93mFROM [mcentos
+[93mMAINTAINER [mdipesh016@gmail.com
+[93mENV [mx=web1
+[93mRUN [mdnf install httpd -y
+[93mADD [mweb1  /var/www/html/
+[93mEXPOSE [m80
+[93mENTRYPOINT [mhttpd -DFOREGROUND
+[94m~                                                                                                         [9;1H~                                                                                                         [10;1H~                                                                                                         [11;1H~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H1,1[11CAll"Dockerfile" 7L, 145C[1;1H[?25h[?25l[28;79Hi[1;1H[28;79H [1;1H[28;1H[1m-- INSERT --[m[28;14H[K[28;89H1,1[11CAll[1;1H[?25h[?25l[28;89H2[2;1H[?25h[?25l[28;89H3[3;1H[?25h[?25l[28;91H2[3;2H[?25h[?25l[28;91H3[3;3H[?25h[?25l[28;91H4[3;4H[?25h[?25l[28;91H5[3;5H[?25h[?25l[28;91H6[3;6H[?25h[?25l[28;91H7[3;7H[?25h[?25l[28;91H8[3;8H[?25h[?25l[28;91H9[3;9H[?25h[?25l[28;91H10[3;10H[?25h[?25l[28;92H1[3;11H[?25h[?25l[4;27r[4;1H[L[1;28r[28;89H[K[28;89H4,1[11CAll[4;1H[?25h[?25lR[28;91H2[4;2H[?25h[?25lU[28;91H3[4;3H[?25h[?25lN[28;91H4[4;4H[?25h[?25l[93mRUN [m[28;91H5[4;5H[?25h[?25lm[28;91H6[4;6H[?25h[?25lk[28;91H7[4;7H[?25h[?25ld[28;91H8[4;8H[?25h[?25li[28;91H9[4;9H[?25h[?25lr[28;91H10[4;10H[?25h[?25l[28;92H1[4;11H[?25h[?25l/[28;92H2[4;12H[?25h[?25lm[28;92H3[4;13H[?25h[?25ly[28;92H4[4;14H[?25h[?25lc[28;92H5[4;15H[?25h[?25lo[28;92H6[4;16H[?25h[?25ld[28;92H7[4;17H[?25h[?25le[28;92H8[4;18H[?25h[?25l[28;89H5[5;18H[?25h[?25l[28;92H9[5;19H[?25h[?25l[28;91H20[5;20H[?25h[?25l[28;92H1[5;21H[?25h[?25l[28;92H2[5;22H[?25h[?25l[28;92H3[5;23H[?25h[?25l[28;92H4[5;24H[?25h[?25l[28;92H5[5;25H[?25h[?25l[28;89H6[6;25H[?25h[?25l[6;24H[K[28;92H4[6;24H[?25h[?25l[6;23H[K[28;92H3[6;23H[?25h[?25l[6;22H[K[28;92H2[6;22H[?25h[?25l[6;21H[K[28;92H1[6;21H[?25h[?25l[6;20H[K[28;92H0[6;20H[?25h[?25l[6;19H[K[28;91H19[6;19H[?25h[?25l[6;18H[K[28;92H8[6;18H[?25h[?25l[6;17H[K[28;92H7[6;17H[?25h[?25l[6;16H[K[28;92H6[6;16H[?25h[?25l[6;15H[K[28;92H5[6;15H[?25h[?25l[6;14H[K[28;92H4[6;14H[?25h[?25l[6;13H[K[28;92H3[6;13H[?25h[?25l[6;12H[K[28;92H2[6;12H[?25h[?25l[6;11H[K[28;92H1[6;11H[?25h[?25l[28;92H0[6;10H[?25h[?25l[28;91H9 [6;9H[?25h[?25l[6;8H[K[28;91H8[6;8H[?25h[?25l[6;7H[K[28;91H7[6;7H[?25h[?25lb[28;91H8[6;8H[?25h[?25l1[28;91H9[6;9H[?25h[?25l[28;91H10[6;10H[?25h[?25l/[28;92H1[6;11H[?25h[?25lm[28;92H2[6;12H[?25h[?25ly[28;92H3[6;13H[?25h[?25lc[28;92H4[6;14H[?25h[?25lo[28;92H5[6;15H[?25h[?25ld[28;92H6[6;16H[?25h[?25le[28;92H7[6;17H[?25h[?25l/[28;92H8[6;18H[?25h[?25lw[28;92H9[6;19H[?25h[?25le[28;91H20[6;20H[?25h[?25lb[28;92H1[6;21H[?25h[?25l1[28;92H2[6;22H[?25h[?25l[7;27r[7;1H[L[1;28r[28;89H[K[28;89H7,1[11CAll[7;1H[?25h[?25lA[28;91H2[7;2H[?25h[?25lD[28;91H3[7;3H[?25h[?25lD[28;91H4[7;4H[?25h[?25l[93mADD [m[28;91H5[7;5H[?25h[?25lw[28;91H6[7;6H[?25h[?25le[28;91H7[7;7H[?25h[?25lb[28;91H8[7;8H[?25h[?25l2[28;91H9[7;9H[?25h[?25l[28;91H10[7;10H[?25h[?25l/[28;92H1[7;11H[?25h[?25lm[28;92H2[7;12H[?25h[?25ly[28;92H3[7;13H[?25h[?25lc[28;92H4[7;14H[?25h[?25lo[28;92H5[7;15H[?25h[?25ld[28;92H6[7;16H[?25h[?25le[28;92H7[7;17H[?25h[?25l/[28;92H8[7;18H[?25h[?25lw[28;92H9[7;19H[?25h[?25le[28;91H20[7;20H[?25h[?25lb[28;92H1[7;21H[?25h[?25l2[28;92H2[7;22H[?25h[?25l[8;27r[8;1H[L[1;28r[28;89H[K[28;89H8,1[11CAll[8;1H[?25h[?25lA[28;91H2[8;2H[?25h[?25lD[28;91H3[8;3H[?25h[?25lD[28;91H4[8;4H[?25h[?25l[93mADD [m[28;91H5[8;5H[?25h[?25ls[28;91H6[8;6H[?25h[?25lt[28;91H7[8;7H[?25h[?25la[28;91H8[8;8H[?25h[?25lr[28;91H9[8;9H[?25h[?25lt[28;91H10[8;10H[?25h[?25lw[28;92H1[8;11H[?25h[?25le[28;92H2[8;12H[?25h[?25lb[28;92H3[8;13H[?25h[?25l.[28;92H4[8;14H[?25h[?25ls[28;92H5[8;15H[?25h[?25lh[28;92H6[8;16H[?25h[?25l[28;92H7[8;17H[?25h[?25l/[28;92H8[8;18H[?25h[?25lm[28;92H9[8;19H[?25h[?25ly[28;91H20[8;20H[?25h[?25lc[28;92H1[8;21H[?25h[?25lo[28;92H2[8;22H[?25h[?25ld[28;92H3[8;23H[?25h[?25le[28;92H4[8;24H[?25h[?25l/[28;92H5[8;25H[?25h[?25ls[28;92H6[8;26H[?25h[?25lt[28;92H7[8;27H[?25h[?25la[28;92H8[8;28H[?25h[?25lr[28;92H9[8;29H[?25h[?25lt[28;91H30[8;30H[?25h[?25lw[28;92H1[8;31H[?25h[?25le[28;92H2[8;32H[?25h[?25lb[28;92H3[8;33H[?25h[?25l.[28;92H4[8;34H[?25h[?25ls[28;92H5[8;35H[?25h[?25lh[28;92H6[8;36H[?25h[?25l[9;27r[9;1H[L[1;28r[28;89H[K[28;89H9,1[11CAll[9;1H[?25h[?25lR[28;91H2[9;2H[?25h[?25lU[28;91H3[9;3H[?25h[?25lN[28;91H4[9;4H[?25h[?25l[93mRUN [m[28;91H5[9;5H[?25h[?25lc[28;91H6[9;6H[?25h[?25lh[28;91H7[9;7H[?25h[?25lm[28;91H8[9;8H[?25h[?25lo[28;91H9[9;9H[?25h[?25ld[28;91H10[9;10H[?25h[?25l[28;92H1[9;11H[?25h[?25l+[28;92H2[9;12H[?25h[?25lx[28;92H3[9;13H[?25h[?25l[28;92H4[9;14H[?25h[?25l/[28;92H5[9;15H[?25h[?25lm[28;92H6[9;16H[?25h[?25ly[28;92H7[9;17H[?25h[?25lc[28;92H8[9;18H[?25h[?25lo[28;92H9[9;19H[?25h[?25ld[28;91H20[9;20H[?25h[?25le[28;92H1[9;21H[?25h[?25l/[28;92H2[9;22H[?25h[?25ls[28;92H3[9;23H[?25h[?25lt[28;92H4[9;24H[?25h[?25la[28;92H5[9;25H[?25h[?25lr[28;92H6[9;26H[?25h[?25lt[28;92H7[9;27H[?25h[?25lw[28;92H8[9;28H[?25h[?25le[28;92H9[9;29H[?25h[?25lb[28;91H30[9;30H[?25h[?25l.[28;92H1[9;31H[?25h[?25ls[28;92H2[9;32H[?25h[?25lh[28;92H3[9;33H[?25h[?25l[28;89H10,10[10;10H[?25h[?25l[28;90H1,3[11;30H[?25h[?25l[11;29H[K[28;92H29[11;29H[?25h[?25l[11;28H[K[28;93H8[11;28H[?25h[?25l[11;27H[K[28;93H7[11;27H[?25h[?25l[11;26H[K[28;93H6[11;26H[?25h[?25l[11;25H[K[28;93H5[11;25H[?25h[?25l[11;24H[K[28;93H4[11;24H[?25h[?25l[11;23H[K[28;93H3[11;23H[?25h[?25l[11;22H[K[28;93H2[11;22H[?25h[?25l[11;21H[K[28;93H1[11;21H[?25h[?25l[11;20H[K[28;93H0[11;20H[?25h[?25l[11;19H[K[28;92H19[11;19H[?25h[?25l[11;18H[K[28;93H8[11;18H[?25h[?25l[28;93H7[11;17H[?25h[?25l[11;16H[K[28;93H6[11;16H[?25h[?25l[11;15H[K[28;93H5[11;15H[?25h[?25l[11;14H[K[28;93H4[11;14H[?25h[?25l[11;13H[K[28;93H3[11;13H[?25h[?25l[11;12H[K[28;93H2[11;12H[?25h[?25l[[28;93H3[11;13H[?25h[?25l][46m[][m[28;93H4[11;14H[?25h[?25l[28;93H3[11;13H[?25h[?25l[95m[46m"[m[95m]"[m[95m[46m][m[28;93H4[11;14H[?25h[?25l[95m[46m"[m][95m"[m[46m][m[28;93H5[11;15H[?25h[?25l[[2C][28;93H4[11;14H[?25h[?25l[95m/"[m][28;93H5[11;15H[?25h[?25l[95mb"[m][28;93H6[11;16H[?25h[?25l[95mi"[m][28;93H7[11;17H[?25h[?25l[95mn"[m][28;93H8[11;18H[?25h[?25l[95m/"[m][28;93H9[11;19H[?25h[?25l[95mb"[m][28;92H20[11;20H[?25h[?25l[95ma"[m][28;93H1[11;21H[?25h[?25l[95ms"[m][28;93H2[11;22H[?25h[?25l[95mh"[m][28;93H3[11;23H[?25h[?25l[11;12H[46m[[11C][m[28;93H4[11;24H[?25h[?25l[46m,[m],[46m][m[28;93H5[11;25H[?25h[?25l[95m[46m"[m[95m]"[m[95m[46m][m[28;93H6[11;26H[?25h[?25l[95m[46m"[m][95m"[m[46m][m[28;93H7[11;27H[?25h[?25l[11;12H[[14C][28;93H6[11;26H[?25h[?25l[95m/"[m][28;93H7[11;27H[?25h[?25l[95mm"[m][28;93H8[11;28H[?25h[?25l[95my"[m][28;93H9[11;29H[?25h[?25l[95mc"[m][28;92H30[11;30H[?25h[?25l[95mo"[m][28;93H1[11;31H[?25h[?25l[95md"[m][28;93H2[11;32H[?25h[?25l[95me"[m][28;93H3[11;33H[?25h[?25l[95m/"[m][28;93H4[11;34H[?25h[?25l[95ms"[m][28;93H5[11;35H[?25h[?25l[95mt"[m][28;93H6[11;36H[?25h[?25l[95ma"[m][28;93H7[11;37H[?25h[?25l[95mr"[m][28;93H8[11;38H[?25h[?25l[95mt"[m][28;93H9[11;39H[?25h[?25l[95mw"[m][28;92H40[11;40H[?25h[?25l[95me"[m][28;93H1[11;41H[?25h[?25l[95mb"[m][28;93H2[11;42H[?25h[?25l[95m."[m][28;93H3[11;43H[?25h[?25l[95ms"[m][28;93H4[11;44H[?25h[?25l[95mh"[m][28;93H5[11;45H[?25h[?25l[11;12H[46m[[33C][m[28;93H6[11;46H[?25h[?25l[28;93H7[11;47H[?25h[28;1H[K[11;46H[?25l[28;79H^[[11;46H[28;79H  [11;47H[28;89H11,46[9CAll[11;46H[?25h[?25l[28;79H^M[11;46H[28;79H  [11;46H[?25h[?25l[28;79H^[[11;46H[28;79H  [11;46H[28;79H^[[11;46H[28;79H  [11;46H[?25h[?25l[28;79H:[11;46H[28;79H[K[28;1H:[?2004h[?25hwq[?25l[?2004l"Dockerfile" 11L, 268C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ vim startq[Kweb.sh 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;28r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[28;1H"startweb.sh" 19L, 298C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m#!/bin/bash[m
+
+[38;5;130mif [m [38;5;130m[[m [38;5;130m"[m[35m$x[m[38;5;130m"[m [38;5;130m==[m [38;5;130m"[m[31mwebapp1[m[38;5;130m"[m [38;5;130m]
+
+then[m[6;9Hcp [35m-rf[m  /mycode/webapp1/*  /var/www/html/[7;9Hhttpd [35m-DFOREGROUND[m
+
+[38;5;130melif[m [38;5;130m[[m [38;5;130m"[m[35m$x[m[38;5;130m"[m [38;5;130m==[m [38;5;130m"[m[31mwebapp2[m[38;5;130m"[m [38;5;130m]
+
+then[m[12;9Hcp [35m-rf[m  /mycode/webapp2/*  /var/www/html/[13;9Hhttpd [35m-DFOREGROUND[m
+
+[38;5;130melse[16;9Hecho[m[31m [m[38;5;130m"[m[31mSorry bro no match found[m[38;5;130m"[m[31m  [m[38;5;130m>[m/var/www/html/index.html[17;9Hhttpd [35m-DFOREGROUND[m
+
+[38;5;130mfi[m
+[94m~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[96m#!/bin/bash[m
+
+[93mif [m [93m[[m [93m"[m[38;5;81m$x[m[93m"[m [93m==[m [93m"[m[95mwebapp1[m[93m"[m [93m]
+
+then[m[6;9Hcp [38;5;224m-rf[m  /mycode/webapp1/*  /var/www/html/[7;9Hhttpd [38;5;224m-DFOREGROUND[m
+
+[93melif[m [93m[[m [93m"[m[38;5;81m$x[m[93m"[m [93m==[m [93m"[m[95mwebapp2[m[93m"[m [93m]
+
+then[m[12;9Hcp [38;5;224m-rf[m  /mycode/webapp2/*  /var/www/html/[13;9Hhttpd [38;5;224m-DFOREGROUND[m
+
+[93melse[16;9Hecho[m[95m [m[93m"[m[95mSorry bro no match found[m[93m"[m[95m  [m[93m>[m/var/www/html/index.html[17;9Hhttpd [38;5;224m-DFOREGROUND[m
+
+[93mfi[m
+[94m~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H1,1[11CAll"startweb.sh" 19L, 298C[1;1H[?25h[?25l[28;79H~@k[1;1H[28;79H   [2;1H[28;89H2,0-1[2;1H[?25h[?25l[28;79H~@k[2;1H[28;79H   [3;1H[28;89H3,1  [3;1H[?25h[?25l[28;79Hi[3;1H[28;79H [3;1H[28;1H[1m-- INSERT --[m[28;13H[K[28;89H3,1[11CAll[3;1H[?25h[?25l[28;89H4[4;1H[?25h[?25l[28;89H5[5;1H[?25h[?25l[28;89H6[6;1H[?25h[?25l[28;89H7[7;1H[?25h[?25l[28;91H2-9[7;9H[?25h[?25l[28;91H3-10[7;10H[?25h[?25l[28;91H4-11[7;11H[?25h[?25l[28;91H5-12[7;12H[?25h[?25l[28;91H6-13[7;13H[?25h[?25l[28;91H7-14[7;14H[?25h[?25l[28;89H6[6;14H[?25h[?25l[28;89H5,7   [5;7H[?25h[?25l[28;89H4,1[4;1H[?25h[?25l[28;89H3,14[3;14H[?25h[?25l[28;92H5[3;15H[?25h[?25l[28;92H6[3;16H[?25h[?25l[28;92H7[3;17H[?25h[?25l[28;92H8[3;18H[?25h[?25l[28;92H9[3;19H[?25h[?25l[28;91H20[3;20H[?25h[?25l[28;92H1[3;21H[?25h[?25l[28;92H2[3;22H[?25h[?25l[28;92H3[3;23H[?25h[?25l[93m"[m [93m][m[3;25H[K[28;92H2[3;22H[?25h[?25l[93m"[m [93m][m[3;24H[K[28;92H1[3;21H[?25h[?25l[93m"[m [93m][m[3;23H[K[28;92H0[3;20H[?25h[?25l[93m"[m [93m][m[3;22H[K[28;91H19[3;19H[?25h[?25l[95m1[m[93m"[m [93m][m[28;91H20[3;20H[?25h[?25l[28;89H4,1 [4;1H[?25h[?25l[28;89H5,7[5;7H[?25h[?25l[28;89H6,13-20[6;20H[?25h[?25l[28;92H4-21[6;21H[?25h[?25l[28;92H5-22[6;22H[?25h[?25l[28;92H6-23[6;23H[?25h[?25l[28;92H7-24[6;24H[?25h[?25l[28;92H8-25[6;25H[?25h[?25l[28;92H9-26[6;26H[?25h[?25l[28;91H20-27[6;27H[?25h[?25l[28;92H1-28[6;28H[?25h[?25l[28;92H2-29[6;29H[?25h[?25l[28;92H3-30[6;30H[?25h[?25l[28;92H4-31[6;31H[?25h[?25l1/*  /var/www/html/[6;49H[K[28;92H3-30[6;30H[?25h[?25l1/*  /var/www/html/[6;48H[K[28;92H2-29[6;29H[?25h[?25l1/*  /var/www/html/[6;47H[K[28;92H1-28[6;28H[?25h[?25l[28;89H7,20-27[7;27H[?25h[?25l[28;89H8,1    [8;1H[?25h[?25l[9;6H[93m[46m[[19C][m[28;89H9,27[9;27H[?25h[?25l[28;92H6[9;26H[?25h[?25l[9;6H[93m[[19C][m[28;92H5[9;25H[?25h[?25l[28;92H4[9;24H[?25h[?25l[28;92H3[9;23H[?25h[?25l[95m2[m[93m"[m [93m][m[9;26H[K[28;92H2[9;22H[?25h[?25l[95m2[m[93m"[m [93m][m[9;25H[K[28;92H1[9;21H[?25h[?25l[95m2[m[93m"[m [93m][m[9;24H[K[28;92H0[9;20H[?25h[?25l[28;89H10,1[10;1H[?25h[?25l[28;90H1,6[11;6H[?25h[?25l[28;90H2,13-20[12;20H[?25h[?25l[28;93H4-21[12;21H[?25h[?25l[28;93H5-22[12;22H[?25h[?25l[28;93H6-23[12;23H[?25h[?25l[28;93H7-24[12;24H[?25h[?25l[28;93H8-25[12;25H[?25h[?25l[28;93H9-26[12;26H[?25h[?25l[28;92H20-27[12;27H[?25h[?25l[28;93H1-28[12;28H[?25h[?25l[28;93H2-29[12;29H[?25h[?25l[28;93H3-30[12;30H[?25h[?25l[28;93H4-31[12;31H[?25h[?25l2/*  /var/www/html/[12;49H[K[28;93H3-30[12;30H[?25h[?25l2/*  /var/www/html/[12;48H[K[28;93H2-29[12;29H[?25h[?25l2/*  /var/www/html/[12;47H[K[28;93H1-28[12;28H[?25h[?25l[28;93H2-29[12;29H[?25h[?25l[28;93H3-30[12;30H[?25h[?25l[28;90H3,20-27[13;27H[?25h[?25l[28;90H4,1    [14;1H[?25h[?25l[28;90H5,5[15;5H[?25h[?25l[28;90H6,23-30[16;30H[?25h[?25l[28;90H7,20-27[17;27H[?25h[28;1H[K[17;26H[?25l[28;79H^[[17;26H[28;79H  [17;27H[28;89H17,19-26      All[17;26H[?25h[?25l[28;79H:[17;26H[28;79H[K[28;1H:[?2004h[?25hwq[?25l[?2004l"startweb.sh" 19L, 286C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cat d[KDockerfile 
+FROM centos
+MAINTAINER dipesh016@gmail.com
+ENV x=web1
+RUN mkdir /mycode
+RUN dnf install httpd -y 
+ADD web1 /mycode/web1
+ADD web2 /mycode/web2
+ADD startweb.sh /mycode/startweb.sh
+RUN chmod +x /mycode/startweb.sh
+EXPOSE 80
+ENTRYPOINT ["/bin/bash","/mycode/startweb.sh"]
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ cat startweb.sh 
+#!/bin/bash
+
+if  [ "$x" == "web1" ]
+
+then  
+	cp -rf  /mycode/web1/*  /var/www/html/
+	httpd -DFOREGROUND
+
+elif [ "$x" == "web2" ]
+
+then 
+	cp -rf  /mycode/web2/*  /var/www/html/
+	httpd -DFOREGROUND
+
+else
+	echo "Sorry bro no match found"  >/var/www/html/index.html
+	httpd -DFOREGROUND
+
+fi
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ vim docker-compose.yml 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;28r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[28;1H"docker-compose.yml" 10L, 140C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mversion[m[35m:[m [31m'3.8'[m
+[36mservices[m[35m:[m
+   [36mapp1[m[35m:[m[4;7H[36mimage[m[35m:[m dipesh:webapp1[5;7H[36mbuild[m[35m:[m .[6;7H[36mcontainer_name[m[35m:[m webc11[7;7H[36mports[m[35m:[m[8;8H[38;5;130m- [m[31m"9991:80"[m
+
+
+[94m~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mversion[m[38;5;224m:[m [95m'3.8'[m
+[1m[96mservices[m[38;5;224m:[m
+   [1m[96mapp1[m[38;5;224m:[m[4;7H[1m[96mimage[m[38;5;224m:[m dipesh:webapp1[5;7H[1m[96mbuild[m[38;5;224m:[m .[6;7H[1m[96mcontainer_name[m[38;5;224m:[m webc11[7;7H[1m[96mports[m[38;5;224m:[m[8;8H[93m- [m[95m"9991:80"[m
+
+
+[94m~                                                                                                         [12;1H~                                                                                                         [13;1H~                                                                                                         [14;1H~                                                                                                         [15;1H~                                                                                                         [16;1H~                                                                                                         [17;1H~                                                                                                         [18;1H~                                                                                                         [19;1H~                                                                                                         [20;1H~                                                                                                         [21;1H~                                                                                                         [22;1H~                                                                                                         [23;1H~                                                                                                         [24;1H~                                                                                                         [25;1H~                                                                                                         [26;1H~                                                                                                         [27;1H~                                                                                                         [m[28;89H1,1[11CAll"docker-compose.yml" 10L, 140C[1;1H[?25h[?25l[28;79Hi[1;1H[28;79H [1;1H[28;1H[1m-- INSERT --[m[28;13H[K[28;89H1,1[11CAll[1;1H[?25h[?25l[28;89H2[2;1H[?25h[?25l[28;89H3[3;1H[?25h[?25l[28;89H4[4;1H[?25h[?25l[28;91H2[4;2H[?25h[?25l[28;91H3[4;3H[?25h[?25l[28;91H4[4;4H[?25h[?25l[28;91H5[4;5H[?25h[?25l[28;91H6[4;6H[?25h[?25l[28;91H7[4;7H[?25h[?25l[28;91H8[4;8H[?25h[?25l[28;91H9[4;9H[?25h[?25l[28;91H10[4;10H[?25h[?25l[28;92H1[4;11H[?25h[?25l[28;92H2[4;12H[?25h[?25l[28;92H3[4;13H[?25h[?25l[28;92H4[4;14H[?25h[?25l[28;92H5[4;15H[?25h[?25l[28;92H6[4;16H[?25h[?25l[28;92H7[4;17H[?25h[?25l[28;92H8[4;18H[?25h[?25l[28;92H9[4;19H[?25h[?25l[28;91H20[4;20H[?25h[?25l[28;92H1[4;21H[?25h[?25l[28;92H2[4;22H[?25h[?25l[28;92H3[4;23H[?25h[?25l[28;92H4[4;24H[?25h[?25l[28;92H5[4;25H[?25h[?25l[28;92H6[4;26H[?25h[?25l[28;92H7[4;27H[?25h[?25l[28;92H8[4;28H[?25h[?25l[4;27H[K[28;92H7[4;27H[?25h[?25l[4;26H[K[28;92H6[4;26H[?25h[?25l[4;25H[K[28;92H5[4;25H[?25h[?25l[4;24H[K[28;92H4[4;24H[?25h[?25l[4;23H[K[28;92H3[4;23H[?25h[?25l[4;22H[K[28;92H2[4;22H[?25h[?25l[4;21H[K[28;92H1[4;21H[?25h[?25lm[28;92H2[4;22H[?25h[?25lu[28;92H3[4;23H[?25h[?25ll[28;92H4[4;24H[?25h[?25lt[28;92H5[4;25H[?25h[?25li[28;92H6[4;26H[?25h[?25la[28;92H7[4;27H[?25h[?25lp[28;92H8[4;28H[?25h[?25lp[28;92H9[4;29H[?25h[?25l1[28;91H30[4;30H[?25h[?25l[28;89H5,15[5;15H[?25h[?25l[28;89H6,29[6;29H[?25h[?25l[6;28H[K[28;92H8[6;28H[?25h[?25l[6;27H[K[28;92H7[6;27H[?25h[?25l2[28;92H8[6;28H[?25h[?25l2[28;92H9[6;29H[?25h[?25l[28;89H7,13[7;13H[?25h[?25l[28;89H8,19[8;19H[?25h[?25l[28;92H8[8;18H[?25h[?25l[28;92H7[8;17H[?25h[?25l[28;92H6[8;16H[?25h[?25l[28;92H5[8;15H[?25h[?25l[95m:80"[m[8;18H[K[28;92H4[8;14H[?25h[?25l[95m9:80"[m[28;92H5[8;15H[?25h[28;1H[K[8;14H[?25l[28;79H^[[8;14H[28;79H  [8;15H[28;89H8,14[10CAll[8;14H[?25h[?25l[28;79H:[8;14H[28;79H[K[28;1H:[?2004h[?25hwq[?25l[?2004l"docker-compose.yml" 10L, 142C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ ls
+docker-compose.yml  Dockerfile  startweb.sh  [0m[01;34mweb1[0m  [01;34mweb2[0m
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ docker-compose up -d
+Creating network "multiwebapp_default" with the default driver
+Building app1
+Step 1/11 : FROM centos
+ ---> 470671670cac
+Step 2/11 : MAINTAINER dipesh016@gmail.com
+ ---> Using cache
+ ---> a0a1952819db
+Step 3/11 : ENV x=web1
+ ---> Using cache
+ ---> 5bddbbc28f68
+Step 4/11 : RUN mkdir /mycode
+ ---> Running in c402f3420c00
+Removing intermediate container c402f3420c00
+ ---> f6d5d0431fa9
+Step 5/11 : RUN dnf install httpd -y
+ ---> Running in a4975fa1218b
+CentOS-8 - AppStream                             86 kB/s | 5.8 MB     01:09    
+CentOS-8 - Base                                 225 kB/s | 2.2 MB     00:10    
+CentOS-8 - Extras                               358  B/s | 6.7 kB     00:19    
+Dependencies resolved.
+================================================================================
+ Package           Arch   Version                               Repo       Size
+================================================================================
+Installing:
+ httpd             x86_64 2.4.37-21.module_el8.2.0+382+15b0afa8 AppStream 1.7 M
+Installing dependencies:
+ apr               x86_64 1.6.3-9.el8                           AppStream 125 k
+ apr-util          x86_64 1.6.1-6.el8                           AppStream 105 k
+ httpd-filesystem  noarch 2.4.37-21.module_el8.2.0+382+15b0afa8 AppStream  36 k
+ httpd-tools       x86_64 2.4.37-21.module_el8.2.0+382+15b0afa8 AppStream 103 k
+ mod_http2         x86_64 1.11.3-3.module_el8.2.0+307+4d18d695  AppStream 157 k
+ brotli            x86_64 1.0.6-1.el8                           BaseOS    323 k
+ centos-logos-httpd
+                   noarch 80.5-2.el8                            BaseOS     24 k
+ mailcap           noarch 2.1.48-3.el8                          BaseOS     39 k
+Installing weak dependencies:
+ apr-util-bdb      x86_64 1.6.1-6.el8                           AppStream  25 k
+ apr-util-openssl  x86_64 1.6.1-6.el8                           AppStream  27 k
+Enabling module streams:
+ httpd                    2.4                                                  
+
+Transaction Summary
+================================================================================
+Install  11 Packages
+
+Total download size: 2.6 M
+Installed size: 7.5 M
+Downloading Packages:
+(1/11): apr-util-bdb-1.6.1-6.el8.x86_64.rpm      46 kB/s |  25 kB     00:00    
+(2/11): apr-util-openssl-1.6.1-6.el8.x86_64.rpm  74 kB/s |  27 kB     00:00    
+(3/11): apr-1.6.3-9.el8.x86_64.rpm               94 kB/s | 125 kB     00:01    
+(4/11): httpd-filesystem-2.4.37-21.module_el8.2  80 kB/s |  36 kB     00:00    
+(5/11): httpd-tools-2.4.37-21.module_el8.2.0+38 111 kB/s | 103 kB     00:00    
+(6/11): mod_http2-1.11.3-3.module_el8.2.0+307+4  79 kB/s | 157 kB     00:01    
+(7/11): brotli-1.0.6-1.el8.x86_64.rpm            85 kB/s | 323 kB     00:03    
+(8/11): centos-logos-httpd-80.5-2.el8.noarch.rp  62 kB/s |  24 kB     00:00    
+(9/11): mailcap-2.1.48-3.el8.noarch.rpm          52 kB/s |  39 kB     00:00    
+(10/11): apr-util-1.6.1-6.el8.x86_64.rpm         10 kB/s | 105 kB     00:10    
+(11/11): httpd-2.4.37-21.module_el8.2.0+382+15b 143 kB/s | 1.7 MB     00:11    
+--------------------------------------------------------------------------------
+Total                                           183 kB/s | 2.6 MB     00:14     
+[91mwarning: /var/cache/dnf/AppStream-02e86d1c976ab532/packages/apr-1.6.3-9.el8.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 8483c65d: NOKEY
+[0mCentOS-8 - AppStream                             19 kB/s | 1.6 kB     00:00    
+[91mImporting GPG key 0x8483C65D:
+ Userid     : "CentOS (CentOS Official Signing Key) <security@centos.org>"
+ Fingerprint: 99DB 70FA E1D7 CE22 7FB6 4882 05B5 55B3 8483 C65D
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+[0mKey imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : apr-1.6.3-9.el8.x86_64                                1/11 
+  Running scriptlet: apr-1.6.3-9.el8.x86_64                                1/11 
+  Installing       : apr-util-bdb-1.6.1-6.el8.x86_64                       2/11 
+  Installing       : apr-util-openssl-1.6.1-6.el8.x86_64                   3/11 
+  Installing       : apr-util-1.6.1-6.el8.x86_64                           4/11 
+  Running scriptlet: apr-util-1.6.1-6.el8.x86_64                           4/11 
+  Installing       : httpd-tools-2.4.37-21.module_el8.2.0+382+15b0afa8.    5/11 
+  Installing       : mailcap-2.1.48-3.el8.noarch                           6/11 
+  Installing       : centos-logos-httpd-80.5-2.el8.noarch                  7/11 
+  Installing       : brotli-1.0.6-1.el8.x86_64                             8/11 
+  Running scriptlet: httpd-filesystem-2.4.37-21.module_el8.2.0+382+15b0    9/11 
+  Installing       : httpd-filesystem-2.4.37-21.module_el8.2.0+382+15b0    9/11 
+  Installing       : mod_http2-1.11.3-3.module_el8.2.0+307+4d18d695.x86   10/11 
+  Installing       : httpd-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64   11/11 
+  Running scriptlet: httpd-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64   11/11 
+  Verifying        : apr-1.6.3-9.el8.x86_64                                1/11 
+  Verifying        : apr-util-1.6.1-6.el8.x86_64                           2/11 
+  Verifying        : apr-util-bdb-1.6.1-6.el8.x86_64                       3/11 
+  Verifying        : apr-util-openssl-1.6.1-6.el8.x86_64                   4/11 
+  Verifying        : httpd-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64    5/11 
+  Verifying        : httpd-filesystem-2.4.37-21.module_el8.2.0+382+15b0    6/11 
+  Verifying        : httpd-tools-2.4.37-21.module_el8.2.0+382+15b0afa8.    7/11 
+  Verifying        : mod_http2-1.11.3-3.module_el8.2.0+307+4d18d695.x86    8/11 
+  Verifying        : brotli-1.0.6-1.el8.x86_64                             9/11 
+  Verifying        : centos-logos-httpd-80.5-2.el8.noarch                 10/11 
+  Verifying        : mailcap-2.1.48-3.el8.noarch                          11/11 
+
+Installed:
+  httpd-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64                            
+  apr-util-bdb-1.6.1-6.el8.x86_64                                               
+  apr-util-openssl-1.6.1-6.el8.x86_64                                           
+  apr-1.6.3-9.el8.x86_64                                                        
+  apr-util-1.6.1-6.el8.x86_64                                                   
+  httpd-filesystem-2.4.37-21.module_el8.2.0+382+15b0afa8.noarch                 
+  httpd-tools-2.4.37-21.module_el8.2.0+382+15b0afa8.x86_64                      
+  mod_http2-1.11.3-3.module_el8.2.0+307+4d18d695.x86_64                         
+  brotli-1.0.6-1.el8.x86_64                                                     
+  centos-logos-httpd-80.5-2.el8.noarch                                          
+  mailcap-2.1.48-3.el8.noarch                                                   
+
+Complete!
+Removing intermediate container a4975fa1218b
+ ---> d38fcdcf3bed
+Step 6/11 : ADD web1 /mycode/web1
+ ---> 5fc084c3e4b0
+Step 7/11 : ADD web2 /mycode/web2
+ ---> 80f1706f860a
+Step 8/11 : ADD startweb.sh /mycode/startweb.sh
+ ---> 57825fcbed7b
+Step 9/11 : RUN chmod +x /mycode/startweb.sh
+ ---> Running in 2bfa3fbd7385
+Removing intermediate container 2bfa3fbd7385
+ ---> 472c16a074df
+Step 10/11 : EXPOSE 80
+ ---> Running in d3b594f747a8
+Removing intermediate container d3b594f747a8
+ ---> a054793e90a3
+Step 11/11 : ENTRYPOINT ["/bin/bash","/mycode/startweb.sh"]
+ ---> Running in 1c1018a9271e
+Removing intermediate container 1c1018a9271e
+ ---> f9dcfa0eddee
+[2K
+Successfully built f9dcfa0eddee
+Successfully tagged dipesh:multiapp1
+[33mWARNING[0m: Image for service app1 was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating webc22 ... 
+[1A[2KCreating webc22 ... [32mdone[0m[1B]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ docker-compose ps
+ Name               Command              State          Ports        
+---------------------------------------------------------------------
+webc22   /bin/bash /mycode/startweb.sh   Up      0.0.0.0:9999->80/tcp
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ docker [K-compose down
+Stopping webc22 ... 
+[1A[2KStopping webc22 ... [32mdone[0m[1BRemoving webc22 ... 
+[1A[2KRemoving webc22 ... [32mdone[0m[1BRemoving network multiwebapp_default
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ dockr[Ker-compose images
+Container   Repository   Tag   Image Id   Size
+----------------------------------------------
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ docker-compose up
+Creating network "multiwebapp_default" with the default driver
+Creating webc22 ... 
+[1A[2KCreating webc22 ... [32mdone[0m[1BAttaching to webc22
+[36mwebc22  |[0m AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.24.0.2. Set the 'ServerName' directive globally to suppress this message
+
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping webc22 ... 
+[1A[2KStopping webc22 ... [32mdone[0m[1B]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ docker-compose ps
+ Name               Command               State     Ports
+---------------------------------------------------------
+webc22   /bin/bash /mycode/startweb.sh   Exit 137        
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ 
+]0;dipesh@myubuntu: ~/dockersummer2020/compose/multiwebapp[01;32mdipesh@myubuntu[00m:[01;34m~/dockersummer2020/compose/multiwebapp[00m$ docker-compose run -e x=web2
+Run a one-off command on a service.
+
+For example:
+
+    $ docker-compose run web python manage.py shell
+
+By default, linked services will be started, unless they are already
+running. If you do not want to start linked services, use
+`docker-compose run --no-deps SERVICE COMMAND [ARGS...]`.
+
+Usage:
+    run [options] [-v VOLUME...] [-p PORT...] [-e KEY=VAL...] [-l KEY=VALUE...]
+        SERVICE [COMMAND] [ARGS...]
+
+Options:
+    -d, --detach          Detached mode: Run container in the background, print
+                          new container name.
+   
